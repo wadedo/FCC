@@ -1,0 +1,52 @@
+** start of undefined **
+
+<link rel="stylesheet" href="styles.css">
+
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <label id="name-label">
+    <input id="name" type="text" required placeholder="Enter your name" />
+  </label>
+  
+  <label id="email-label">
+    <input id="email" type="email" required placeholder="Enter your email"/>
+  </label>
+  
+  <label id="number-label">
+    <input id="number" type="number" placeholder="Age" max="100" min="0"></input>
+  </label>
+
+  <select id="dropdown">
+    <option value="">(select one)</option>
+    <option value="1">freeCodeCamp News</option>
+    <option value="2">freeCodeCamp YouTube Channel</option>
+  </select>
+
+  <fieldset>
+    <legend>Account type (required)</legend>
+    <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="account-type" checked /> Personal</label>
+    <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="account-type" /> Business</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Account type (required)</legend>
+    <label for="personal-account"><input id="personal-account" type="checkbox" value="account-type" class="inline" checked /> Personal</label>
+    <label for="business-account"><input id="business-account" type="checkbox" value="account-type" class="inline" /> Business</label>
+  </fieldset>
+
+  <textarea></textarea>
+  <button id="submit">
+   submit
+  </button>
+  
+</form>
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+
