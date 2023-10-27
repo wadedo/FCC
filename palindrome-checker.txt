@@ -1,0 +1,12 @@
+function palindrome(str) {
+  let pattern = new RegExp("[_ `%~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？-]+", "g"); 
+  let newStr = str.replace(pattern, "").toLowerCase();
+  console.log(str, newStr);
+  for (let i=0; i<newStr.length; i++){
+    if (!(newStr[i]===newStr[newStr.length-1-i])){
+      return false;
+    }
+  }
+  return true;
+}
+palindrome("eye");
