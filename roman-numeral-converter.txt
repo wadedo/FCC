@@ -1,0 +1,10 @@
+function convertToRoman(num) {
+  let numToRoman = [["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], ["X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"], ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"], ["M", "MM", "MMM", "MMMM"]];
+  let testArr = num.toString().split("").reverse();
+  let roman = [];
+  for (let i=0; i<testArr.length; i++){
+    roman.unshift(numToRoman[i][testArr[i]-1]);
+  }
+  let finalRoman = roman.join("");
+ return finalRoman;
+}
