@@ -1,0 +1,14 @@
+function rot13(str) {
+  let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  let shiftLetter = new RegExp("[A-Z]", "g");
+  function replacer(letter) {
+    if (alphabet.indexOf(letter)>=13){
+      return alphabet[alphabet.indexOf(letter)-13];
+    }
+    else {
+      return alphabet[alphabet.indexOf(letter)+13];
+    }
+  }
+  return str.replace(shiftLetter, replacer);
+}
+rot13("SERR PBQR PNZC");
