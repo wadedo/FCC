@@ -1,0 +1,9 @@
+function telephoneCheck(str) {
+  let pattern1 = /^1? ?[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}$/g;//
+  let pattern2 = /^1? ?\([0-9]{3}\)[- ]?[0-9]{3}[- ]?[0-9]{4}$/g;
+  if (pattern2.test(str) || pattern1.test(str)) {
+  return true;
+  }
+  else return false;
+}
+telephoneCheck("555-555-5555");
