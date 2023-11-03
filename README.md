@@ -1,2 +1,2 @@
 # FCC
-freecodecamp related project
+freecodecamp related projects
